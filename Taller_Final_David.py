@@ -46,3 +46,7 @@ print(num_casa)
 
 data['Recuperado'].replace('fallecido','Fallecido', inplace=True)
 data[data['Recuperado'] == 'Recuperado'].shape[0]
+
+#Ejercicio 6
+
+data[data.Estado == 'Fallecido' ].shape[0]
