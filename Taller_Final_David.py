@@ -33,3 +33,11 @@ print (num_municipios)
 #Ejercicio 3
 
 data.groupby('Nombre municipio').size().sort_values
+
+#Ejercicio 4
+
+data['Ubicación del caso'].replace('casa','Casa', inplace=True)
+data['Ubicación del caso'].replace('CASA','Casa', inplace=True)
+
+num_casa = len(data[data['Ubicación del caso'] == 'Casa'])
+print(num_casa)
