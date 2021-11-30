@@ -76,3 +76,6 @@ data.groupby('Ubicación del caso').size().sort_values(ascending=False)
 
 data.groupby('Nombre departamento').size().sort_values(ascending=False).head(10)
 
+#Ejercicio 12
+
+data[(data.Estado == 'Fallecido')].groupby('Nombre departamento').size().sort_values(ascending=False).head(10)
