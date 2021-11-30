@@ -95,3 +95,7 @@ data[(data.Estado == 'Fallecido')].groupby('Nombre municipio').size().sort_value
 #Ejercicio 16
 
 data[(data.Recuperado == 'Recuperado')].groupby('Nombre municipio').size().sort_values(ascending=False).head(10)
+
+#Ejercicio 17
+
+data.groupby(['Nombre departamento','Nombre municipio']).size().sort_values(ascending=False)
