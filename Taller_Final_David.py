@@ -29,3 +29,7 @@ data['Nombre municipio'].replace('Anserma','ANSERMA', inplace=True)
 
 num_municipios = len(data.groupby('Nombre municipio').size())
 print (num_municipios)
+
+#Ejercicio 3
+
+data.groupby('Nombre municipio').size().sort_values
