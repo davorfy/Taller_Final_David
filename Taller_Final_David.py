@@ -50,3 +50,7 @@ data[data['Recuperado'] == 'Recuperado'].shape[0]
 #Ejercicio 6
 
 data[data.Estado == 'Fallecido' ].shape[0]
+
+#Ejercicio 7
+
+data.groupby('Tipo de contagio').size().sort_values(ascending=False)
