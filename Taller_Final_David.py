@@ -79,3 +79,7 @@ data.groupby('Nombre departamento').size().sort_values(ascending=False).head(10)
 #Ejercicio 12
 
 data[(data.Estado == 'Fallecido')].groupby('Nombre departamento').size().sort_values(ascending=False).head(10)
+
+#Ejercicio 13
+
+data[(data.Recuperado == 'Recuperado')].groupby('Nombre departamento').size().sort_values(ascending=False).head(10)
