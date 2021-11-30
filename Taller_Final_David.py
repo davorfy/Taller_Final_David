@@ -116,4 +116,11 @@ data.groupby('Nombre del país').size().sort_values(ascending=False)
 
 data.groupby('Fecha de diagnóstico').size().sort_values(ascending=False)
 
+#Ejercicio 22
+
+tasa_mortalidad = (len(data[data.Estado == 'Fallecido'])/len(data))*100
+tasa_recup = (len(data[data.Recuperado == 'Recuperado']) / len(data))*100
+
+print("la tasa de mortalidad es de un", + tasa_mortalidad,"%")
+print("la tasa de recuperación es de un", + tasa_recup,"%")
 
