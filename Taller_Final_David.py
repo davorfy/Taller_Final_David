@@ -72,3 +72,7 @@ data['Ubicación del caso'].replace('CASA','Casa', inplace=True)
 data['Ubicación del caso'].replace('casa','Casa', inplace=True)
 data.groupby('Ubicación del caso').size().sort_values(ascending=False)
 
+#Ejercicio 11
+
+data.groupby('Nombre departamento').size().sort_values(ascending=False).head(10)
+
