@@ -54,3 +54,10 @@ data[data.Estado == 'Fallecido' ].shape[0]
 #Ejercicio 7
 
 data.groupby('Tipo de contagio').size().sort_values(ascending=False)
+
+#Ejercicio 8
+
+data['Nombre departamento'].replace('Tolima','TOLIMA', inplace=True)
+data['Nombre departamento'].replace('Caldas','CALDAS', inplace=True)
+num_dpto = len(data.groupby('Nombre departamento').size())
+print (num_dpto)
