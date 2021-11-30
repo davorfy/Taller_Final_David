@@ -9,3 +9,8 @@ import pandas as pd
 
 url = 'covid_22_noviembre.csv'
 data = pd.read_csv(url )
+
+#Ejercicio 1
+
+num_casos = len(data)
+print (num_casos)
