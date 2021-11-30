@@ -65,3 +65,10 @@ print (num_dpto)
 #Ejercicio 9
 
 data.groupby('Nombre departamento').size().sort_values
+
+#Ejercicio 10
+
+data['Ubicación del caso'].replace('CASA','Casa', inplace=True)
+data['Ubicación del caso'].replace('casa','Casa', inplace=True)
+data.groupby('Ubicación del caso').size().sort_values(ascending=False)
+
