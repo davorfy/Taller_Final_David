@@ -104,3 +104,8 @@ data.groupby(['Nombre departamento','Nombre municipio']).size().sort_values(asce
 
 data.groupby(['Sexo','Nombre municipio','Nombre departamento']).size()
 
+#Ejercicio 19
+
+data.groupby(['Sexo','Nombre municipio','Nombre departamento']).Edad.mean()
+
+
