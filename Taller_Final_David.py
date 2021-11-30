@@ -108,4 +108,8 @@ data.groupby(['Sexo','Nombre municipio','Nombre departamento']).size()
 
 data.groupby(['Sexo','Nombre municipio','Nombre departamento']).Edad.mean()
 
+#Ejercicio 20
+
+data.groupby('Nombre del país').size().sort_values(ascending=False)
+
 
