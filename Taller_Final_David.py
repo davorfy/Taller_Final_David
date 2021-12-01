@@ -49,7 +49,7 @@ data[data['Recuperado'] == 'Recuperado'].shape[0]
 
 #Ejercicio 6
 
-data[data.Estado == 'Fallecido' ].shape[0]
+data[data.Estado == 'Fallecido'].shape[0]
 
 #Ejercicio 7
 
@@ -155,6 +155,10 @@ data.groupby(['Recuperado','Nombre departamento']).size().head(10).cumsum().plot
 #Ejercicio 29
 
 data.groupby(['Recuperado','Nombre municipio']).size().head(10).cumsum().plot()
+
+#Ejercicio 30
+
+data.groupby[(data.Estado == 'Fallecido'),'Edad'].size().sort_values(ascending=False)
 
 #Ejercicio 32
 
