@@ -130,3 +130,9 @@ tasa_mortalidad = (len(data[data.Estado == 'Fallecido'])/len(data))*100
 tasa_recup = (len(data[data.Recuperado == 'Recuperado']) / len(data))*100
 data.groupby([int(tasa_mortalidad), int(tasa_recup),'Nombre departamento']).size()
 
+#Ejercicio 24
+
+tasa_mortalidad = (len(data[data.Estado == 'Fallecido'])/len(data))*100
+tasa_recup = (len(data[data.Recuperado == 'Recuperado']) / len(data))*100
+data.groupby([int(tasa_mortalidad), int(tasa_recup),'Nombre municipio']).size()
+
