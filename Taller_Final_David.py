@@ -151,3 +151,7 @@ data['Ubicación del caso'].value_counts().plot.bar()
 #Ejercicio 33
 
 data.Sexo.value_counts().plot.bar()
+
+#Ejercicio 34
+
+data['Tipo de contagio'].value_counts().plot.bar()
