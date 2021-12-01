@@ -144,6 +144,10 @@ data.groupby(['Nombre municipio','Ubicación del caso']).size()
 
 data.groupby(['Sexo','Nombre municipio']).Edad.mean()
 
+#Ejercicio 27
+
+data.groupby(['Recuperado']).size().cumsum().plot()
+
 #Ejercicio 32
 
 data['Ubicación del caso'].value_counts().plot.bar()
