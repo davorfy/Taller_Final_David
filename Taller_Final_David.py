@@ -152,6 +152,10 @@ data.groupby(['Recuperado']).size().cumsum().plot()
 
 data.groupby(['Recuperado','Nombre departamento']).size().head(10).cumsum().plot()
 
+#Ejercicio 29
+
+data.groupby(['Recuperado','Nombre municipio']).size().head(10).cumsum().plot()
+
 #Ejercicio 32
 
 data['Ubicación del caso'].value_counts().plot.bar()
