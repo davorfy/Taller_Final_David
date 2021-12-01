@@ -143,3 +143,7 @@ data.groupby(['Nombre municipio','Ubicación del caso']).size()
 #Ejercicio 26
 
 data.groupby(['Sexo','Nombre municipio']).Edad.mean()
+
+#Ejercicio 32
+
+data['Ubicación del caso'].value_counts().plot.bar()
