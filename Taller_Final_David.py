@@ -139,3 +139,7 @@ data.groupby([int(tasa_mortalidad), int(tasa_recup),'Nombre municipio']).size()
 #Ejercicio 25
 
 data.groupby(['Nombre municipio','Ubicación del caso']).size()
+
+#Ejercicio 26
+
+data.groupby(['Sexo','Nombre municipio']).Edad.mean()
