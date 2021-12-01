@@ -160,6 +160,15 @@ data.groupby(['Recuperado','Nombre municipio']).size().head(10).cumsum().plot()
 
 data.groupby[(data.Estado == 'Fallecido'),'Edad'].size().sort_values(ascending=False)
 
+#Ejercicio 31
+
+porc_casa = (len(data[data['Ubicación del caso'] == 'Casa'])/len(data))*100
+porc_fall = (len(data[data['Ubicación del caso'] == 'Fallecido'])/len(data))*100
+porc_Hosp = (len(data[data['Ubicación del caso'] == 'Hospital'])/len(data))*100
+porc_uci = (len(data[data['Ubicación del caso'] == 'Hospital UCI'])/len(data))*100
+
+data.groupby(['Ubicación del caso']).porc_casa.porc_fall.porc_Hosp.porc_uci.size()
+
 #Ejercicio 32
 
 data['Ubicación del caso'].value_counts().plot.bar()
