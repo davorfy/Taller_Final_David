@@ -155,3 +155,8 @@ data.Sexo.value_counts().plot.bar()
 #Ejercicio 34
 
 data['Tipo de contagio'].value_counts().plot.bar()
+
+#Ejercicio 35
+
+data['fecha reporte web'] = pd.to_datetime(data['fecha reporte web'])
+data.groupby[('Recuperado','Fecha reporte web')].size().plot.bar()
